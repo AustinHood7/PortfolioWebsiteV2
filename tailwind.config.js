@@ -20,7 +20,20 @@ module.exports = {
     
         '2xl': '1536px',
         // => @media (min-width: 640 px) { ... }
-      }
+      },
+      extend: {
+          keyframes: {
+            neon_glow: {
+
+            }
+          },
+          animation: {
+            neon_glow: 'wiggle 1s ease-in out infinate'
+          },
+          fontFamily: {
+            body: ['Poppins']
+          }
+      },
   },
   plugins: [],
 }
