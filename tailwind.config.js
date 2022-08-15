@@ -35,6 +35,9 @@ module.exports = {
           fontFamily: {
             body: ['Poppins']
           },
+          colors: {
+            primary: '#f20fb2'
+          }
       },
   },
   plugins: [],
