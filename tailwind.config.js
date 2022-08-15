@@ -1,3 +1,5 @@
+const { readBuilderProgram } = require('typescript');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -32,7 +34,7 @@ module.exports = {
           },
           fontFamily: {
             body: ['Poppins']
-          }
+          },
       },
   },
   plugins: [],

@@ -9,9 +9,6 @@ const Navbar = () => {
                     <h1 className="mr-4 text-3xl font-bold sm:text-4xl">Austin Hood</h1>
                     
                 </div>
-                <button className="bg-black hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ...">
-                     Save changes
-                </button>
                 <div className="hidden md:flex font-body">
                     <ul className="float-right md:flex margin ">
                         <li className="hover:bg-zinc-600">About</li>
