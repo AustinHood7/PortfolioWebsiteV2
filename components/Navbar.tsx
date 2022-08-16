@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar = () => {
     return(
-        <div className="w-screen h-[80px] z-10 bg bg-zinc-200 fixed drop-shadow-lg font-body">
+        <div className="w-screen h-[80px] z-10 bg bg-gray-800 fixed drop-shadow-lg font-body text-zinc-100">
             <div className="flex items-center justify-between w-full h-full px-2 ">
                 <div className="flex items-center">
                     <h1 className="px-10 mr-4 text-3xl font-bold sm:text-4xl">Austin Hood</h1>
