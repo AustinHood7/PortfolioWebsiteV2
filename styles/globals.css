@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Pacifico&family=Poppins&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,10 +15,9 @@
     }
 
     ul li{
-        text-shadow: 0 0 1em hsl(0 0% 100% / 0.5),
-        0 0 1em #04d9ff;
-
+        text-shadow: 0 0 1em hsl(0 0% 100% / 0.5);
         box-shadow: 0 0 1em 0 #04d9ff,
+
         inset 0 0 1em 0 #04d9ff
     }
 }

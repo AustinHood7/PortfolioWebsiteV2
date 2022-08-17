@@ -33,12 +33,26 @@ module.exports = {
             neon_glow: 'wiggle 1s ease-in out infinate'
           },
           fontFamily: {
-            body: ['Poppins']
+            alt: ['Poppins'],
+            body: ['Pacifico, cursive']
           },
           colors: {
-            primary: '#04d9ff'
+            primary: '#04d9ff',
+            miami: '#0BD3D3',
+            vice: '#FF44CC'
+          },
+          boxShadow: {
+            'blueGlow' : '0 0 .5em 0 #04d9ff',
+            'brightGlow' : '0 0 1em .5em #04d9ff',
+            'pinkGlow' : '0 0 1em 0 #FF44CC',
+            'brightPinkGlow' : '0 0 1em .5em #FF44CC',
+          },
+          textShadow: {
+            'white' : '0 0 1em hsl(0 0% 100% / 0.5)',
+            'blue' : '0 0 1em #04d9ff',
+            'pink' : '0 0 .5em #FF44CC',
           }
       },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-textshadow')],
 }

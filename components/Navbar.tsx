@@ -9,12 +9,16 @@ const Navbar = () => {
                     <h1 className="px-10 mr-4 text-3xl font-bold sm:text-4xl">Austin Hood</h1>
                 </div>
                 <div className="hidden md:flex font-body">
-                    <ul className="float-right md:flex">
-                        <li className=" py-5 p-x-[1em] m-3 rounded-xl">About</li>
-                        <li className=" py-5 p-x-[1em] m-3 rounded-xl">Projects</li>
-                        <li className=" py-5 p-x-[1em] m-3 rounded-xl">Work</li>
-                        <li className=" py-5 p-x-[1em] m-3 rounded-xl">Contact</li>
-                        <li className="border-primary px-10 border-4 p-y-[.25em] p-x-[1em] m-3 rounded-xl">Resume</li>
+                    <ul className="float-right text-2xl font-extrabold md:flex">
+                        <li className="border-primary border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
+                        hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">About</li>
+                        <li className="border-primary border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
+                        hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Projects</li>
+                        <li className="border-primary border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
+                        hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Work</li>
+                        <li className="border-primary border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
+                        hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Contact</li>
+                        <li className="float-right p-4 px-8 py-4 m-3 text-3xl transition-opacity border-4 md:flex text-vice border-vice shadow-pinkGlow text-shadow-pink rounded-xl hover:bg-vice hover:text-gray-900 hover:shadow-brightPinkGlow">Resume</li>
                     </ul>
                 </div>
             </div>
