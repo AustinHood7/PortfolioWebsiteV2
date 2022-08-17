@@ -6,11 +6,19 @@
 
 @layer base {
     li{
-        @apply p-5
+        @apply p-[1rem]
     }
 
     :root {
         --color-primary: 317 100% 54%
         --color-secondary: 323 21% 16%
+    }
+
+    ul li{
+        text-shadow: 0 0 1em hsl(0 0% 100% / 0.5),
+        0 0 1em #04d9ff;
+
+        box-shadow: 0 0 1em 0 #04d9ff,
+        inset 0 0 1em 0 #04d9ff
     }
 }
