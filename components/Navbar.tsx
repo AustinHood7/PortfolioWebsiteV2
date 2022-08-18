@@ -8,8 +8,8 @@ const Navbar = () => {
                 <div className="flex items-center">
                     <h1 className="px-10 mr-4 text-3xl font-bold sm:text-4xl">Austin Hood</h1>
                 </div>
-                <div className="hidden md:flex font-body">
-                    <ul className="float-right text-2xl font-extrabold md:flex">
+                <div className="hidden md:flex font-alt">
+                    <ul className="float-right text-xl font-extrabold md:flex">
                         <li className="border-primary border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
                         hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">About</li>
                         <li className="border-primary border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
