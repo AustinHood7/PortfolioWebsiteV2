@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="w-screen h-[80px] z-10 bg-gray-900 fixed drop-shadow-lg font-body text-primary">
             <div className="flex items-center justify-between w-full h-full px-2 ">
                 <div className="flex items-center">
-                    <h1 className="px-10 mr-4 text-3xl font-bold sm:text-4xl">Austin Hood</h1>
+                    <h1 className="px-10 mr-4 text-3xl font-extrabold sm:text-4xl text-shadow-blue">Austin Hood</h1>
                 </div>
                 <div className="hidden md:flex font-alt">
                     <ul className="float-right text-xl font-extrabold md:flex">
@@ -26,6 +26,6 @@ const Navbar = () => {
             </div>
         </div>
     )
-}
+} 
 
 export default Navbar
