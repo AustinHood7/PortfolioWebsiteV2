@@ -1,33 +1,48 @@
 import Link from "next/link";
-import React from "react";
+import React, {useState} from "react";
 import {MenuIcon, XIcon} from '@heroicons/react/outline'
 import Image from 'next/image';
 import logo from '../public/hood-logo.jpg';
 
 const Navbar = () => {
+
+    const [nav,setNav] = useState(false)
+    const handleClick = () => setNav(!nav)
+    
     return(
         <div className="w-screen h-[80px] z-10 bg-gray-900 fixed drop-shadow-lg font-body text-primary">
             <div className="flex items-center justify-between w-full h-full px-2 ">
                 <div className="flex items-center">
-                    <h1 className="px-10 mr-4 text-3xl font-extrabold sm:text-4xl text-shadow-blue">Austin Hood</h1>
+                    <h1 className=" border-primary border-4 py-3 p-x-[1em] m-3 rounded-xl px-5 text-3xl font-extrabold sm:text-4xl text-shadow-blue">Austin Hood</h1>
                 </div>
                 <div className="hidden md:flex font-alt">
-                    <ul className="float-right text-xl font-extrabold md:flex">
-                        <li className="border-primary border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
-                        hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">About</li>
-                        <li className="border-primary border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
-                        hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Projects</li>
-                        <li className="border-primary border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
-                        hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Work</li>
-                        <li className="border-primary border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
-                        hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Contact</li>
-                        <li className="float-right p-4 px-8 py-4 m-3 text-3xl transition-opacity border-4 md:flex text-vice border-vice shadow-pinkGlow text-shadow-pink rounded-xl hover:bg-vice hover:text-gray-900 hover:shadow-brightPinkGlow">Resume</li>
-                    </ul>
+                    <div class="nav">
+                        <ul className="float-right text-xl font-extrabold md:flex">
+                            <li className="border-primary border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
+                            hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">About</li>
+                            <li className="border-primary border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
+                            hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Projects</li>
+                            <li className="border-primary border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
+                            hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Work</li>
+                            <li className="border-primary border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
+                            hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Contact</li>
+                            <div class="resumeButton">
+                                <li className="float-right p-4 px-8 py-4 m-3 text-3xl transition-opacity border-4 md:flex text-vice border-vice shadow-pinkGlow text-shadow-pink rounded-xl hover:bg-vice hover:text-gray-900 hover:shadow-brightPinkGlow">Resume</li>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
-                <div className="md:hidden">
-                    <MenuIcon className='w-10'/>
+                <div className='md:hidden' onClick={handleClick}>
+                        {!nav ? <MenuIcon className='w-10 mr-5 text-vice'/> : <XIcon className="w-10 mr-5 text-vice"/>}
                 </div>
             </div>
+
+            <ul className={!nav ? 'hidden' : "grid float-right w-full px-8 bg-gray-900 font-alt font-bold"}>
+                <li className="w-full mt-4 text-2xl border-y-2 border-primary rounded-xl text-shadow-blue hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Home</li>
+                <li className="w-full text-2xl border-y-2 border-primary rounded-xl text-shadow-blue hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Projects</li>
+                <li className="w-full text-2xl border-y-2 border-primary rounded-xl text-shadow-blue hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Work</li>
+                <li className="w-full text-2xl border-y-2 border-primary rounded-xl text-shadow-blue hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Contact</li>
+            </ul>
         </div>
     )
 } 
