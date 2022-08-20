@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import {MenuIcon, XIcon} from '@heroicons/react/outline'
 import Image from 'next/image';
 import logo from '../public/hood-logo.jpg';
 
@@ -22,6 +23,9 @@ const Navbar = () => {
                         hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Contact</li>
                         <li className="float-right p-4 px-8 py-4 m-3 text-3xl transition-opacity border-4 md:flex text-vice border-vice shadow-pinkGlow text-shadow-pink rounded-xl hover:bg-vice hover:text-gray-900 hover:shadow-brightPinkGlow">Resume</li>
                     </ul>
+                </div>
+                <div className="md:hidden">
+                    <MenuIcon className='w-10'/>
                 </div>
             </div>
         </div>
