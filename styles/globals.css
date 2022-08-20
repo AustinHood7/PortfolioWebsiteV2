@@ -26,4 +26,10 @@
 
         inset 0 0 .5em 0 #FF44CC
     }
+
+    .hamburgerMenu{
+        text-shadow: 0 0 1em hsl(0 0% 100% / 0.5);
+        box-shadow: 0 0 1em 0 #FF44CC,
+        inset 0 0 .5em 0 #FF44CC
+    }
 }

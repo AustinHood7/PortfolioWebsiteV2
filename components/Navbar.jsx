@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className="w-screen h-[80px] z-10 bg-gray-900 fixed drop-shadow-lg font-body text-primary">
             <div className="flex items-center justify-between w-full h-full px-2 ">
                 <div className="flex items-center">
-                    <h1 className=" border-primary border-4 py-3 p-x-[1em] m-3 rounded-xl px-5 text-3xl font-extrabold sm:text-4xl text-shadow-blue">Austin Hood</h1>
+                    <h1 className=" border-primary border-4 py-3 p-x-[1em] m-3 rounded-xl px-5 text-3xl font-extrabold sm:text-4xl text-shadow-bluehover:bg-primary hover:shadow-brightGlow">Austin Hood</h1>
                 </div>
                 <div className="hidden md:flex font-alt">
                     <div class="nav">
@@ -32,12 +32,14 @@ const Navbar = () => {
                         </ul>
                     </div>
                 </div>
-                <div className='md:hidden' onClick={handleClick}>
-                        {!nav ? <MenuIcon className='w-10 mr-5 text-vice'/> : <XIcon className="w-10 mr-5 text-vice"/>}
+                <div className='border-2 md:hidden hover:bg-vice hover:text-gray-900 hover:shadow-brightPinkGlow rounded-xl' onClick={handleClick}>
+                    <div class='hamburgerMenu'>
+                        {!nav ? <MenuIcon className='w-10 text-vice hover:text-gray-900'/> : <XIcon className="w-10 text-vice hover:text-gray-900"/>}
+                    </div>
                 </div>
             </div>
 
-            <ul className={!nav ? 'hidden' : "grid float-right w-full px-8 bg-gray-900 font-alt font-bold"}>
+            <ul className={!nav ? 'hidden' : "grid float-right w-full bg-gray-900 font-alt font-bold md:hidden"}>
                 <li className="w-full mt-4 text-2xl border-y-2 border-primary rounded-xl text-shadow-blue hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Home</li>
                 <li className="w-full text-2xl border-y-2 border-primary rounded-xl text-shadow-blue hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Projects</li>
                 <li className="w-full text-2xl border-y-2 border-primary rounded-xl text-shadow-blue hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Work</li>
