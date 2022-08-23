@@ -16,7 +16,7 @@ const Navbar = () => {
                     <h1 className=" border-primary border-4 py-3 p-x-[1em] m-3 rounded-xl px-5 text-3xl font-extrabold sm:text-4xl text-shadow-bluehover:bg-primary hover:shadow-brightGlow">Austin Hood</h1>
                 </div>
                 <div className="hidden md:flex font-alt">
-                    <div class="nav">
+                    <div className="nav">
                         <ul className="float-right text-xl font-extrabold md:flex">
                             <li className="border-primary border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
                             hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">About</li>
@@ -26,14 +26,14 @@ const Navbar = () => {
                             hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Work</li>
                             <li className="border-primary border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
                             hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Contact</li>
-                            <div class="resumeButton">
+                            <div className="resumeButton">
                                 <li className="float-right p-4 px-8 py-4 m-3 text-3xl transition-opacity border-4 md:flex text-vice border-vice shadow-pinkGlow text-shadow-pink rounded-xl hover:bg-vice hover:text-gray-900 hover:shadow-brightPinkGlow">Resume</li>
                             </div>
                         </ul>
                     </div>
                 </div>
-                <div className='border-2 md:hidden hover:bg-vice hover:text-gray-900 hover:shadow-brightPinkGlow rounded-xl' onClick={handleClick}>
-                    <div class='hamburgerMenu'>
+                <div className='border-2  md:hidden hover:bg-vice hover:text-gray-900 hover:shadow-brightPinkGlow rounded-xl' onClick={handleClick}>
+                    <div className='hamburgerMenu'>
                         {!nav ? <MenuIcon className='w-10 text-vice hover:text-gray-900'/> : <XIcon className="w-10 text-vice hover:text-gray-900"/>}
                     </div>
                 </div>
