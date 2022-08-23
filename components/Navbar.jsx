@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className="w-screen h-[80px] z-10 bg-gray-900 fixed drop-shadow-lg font-body text-primary">
             <div className="flex items-center justify-between w-full h-full px-2 ">
                 <div className="flex items-center">
-                    <h1 className=" border-primary border-4 py-3 p-x-[1em] m-3 rounded-xl px-5 text-3xl font-extrabold sm:text-4xl text-shadow-bluehover:bg-primary hover:shadow-brightGlow">Austin Hood</h1>
+                    <h1 className=" border-primary border-4 py-3 p-x-[1em] m-3 rounded-xl px-5 text-3xl font-extrabold sm:text-4xl hover:shadow-brightGlow">Austin Hood</h1>
                 </div>
                 <div className="hidden md:flex font-alt">
                     <div className="nav">
@@ -27,12 +27,13 @@ const Navbar = () => {
                             <li className="border-primary border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
                             hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Contact</li>
                             <div className="resumeButton">
-                                <li className="float-right p-4 px-8 py-4 m-3 text-3xl transition-opacity border-4 md:flex text-vice border-vice shadow-pinkGlow text-shadow-pink rounded-xl hover:bg-vice hover:text-gray-900 hover:shadow-brightPinkGlow">Resume</li>
+                                <li className="float-right p-4 px-8 py-4 m-3 text-3xl transition-opacity border-4 md:flex text-vice border-vice 
+                                shadow-pinkGlow text-shadow-pink rounded-xl hover:bg-vice hover:text-gray-900 hover:shadow-brightPinkGlow">Resume</li>
                             </div>
                         </ul>
                     </div>
                 </div>
-                <div className='border-2  md:hidden hover:bg-vice hover:text-gray-900 hover:shadow-brightPinkGlow rounded-xl' onClick={handleClick}>
+                <div className='border-2 md:hidden hover:bg-vice hover:text-gray-900 hover:shadow-brightPinkGlow rounded-xl' onClick={handleClick}>
                     <div className='hamburgerMenu'>
                         {!nav ? <MenuIcon className='w-10 text-vice hover:text-gray-900'/> : <XIcon className="w-10 text-vice hover:text-gray-900"/>}
                     </div>
