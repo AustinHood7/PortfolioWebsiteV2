@@ -34,7 +34,8 @@ module.exports = {
           },
           fontFamily: {
             alt: ['Poppins'],
-            body: ['Pacifico, cursive']
+            body: ['Pacifico, cursive'],
+            rob: ['Roboto']
           },
           colors: {
             primary: '#04d9ff',
