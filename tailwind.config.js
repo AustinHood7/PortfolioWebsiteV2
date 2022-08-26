@@ -51,6 +51,7 @@ module.exports = {
           textShadow: {
             'white' : '0 0 1em hsl(0 0% 100% / 0.5)',
             'blue' : '0 0 1em #04d9ff',
+            'brightBlue': '0 0 1em #04d9ff',
             'pink' : '0 0 .5em #FF44CC',
           }
       },
