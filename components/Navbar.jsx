@@ -2,7 +2,6 @@ import Link from "next/link";
 import React, {useState} from "react";
 import {MenuIcon, XIcon} from '@heroicons/react/outline'
 import Image from 'next/image';
-import logo from '../public/hood-logo.jpg';
 
 const Navbar = () => {
 
@@ -27,9 +26,7 @@ const Navbar = () => {
                             <li className="border-primary border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
                             hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Contact</li>
                             <div className="resumeButton">
-                                <li className="float-right p-4 px-8 py-4 m-3 text-3xl transition-opacity border-4 md:flex 
-                                text-vice border-vice shadow-pinkGlow text-shadow-pink rounded-xl 
-                                hover:bg-vice hover:text-gray-900 hover:shadow-brightPinkGlow">Resume</li>
+                                <li className="float-right p-4 px-8 py-4 m-3 text-3xl transition-opacity border-4 md:flex text-vice border-vice shadow-pinkGlow text-shadow-pink rounded-xl hover:bg-vice hover:text-gray-900 hover:shadow-brightPinkGlow">Resume</li>
                             </div>
                         </ul>
                     </div>
