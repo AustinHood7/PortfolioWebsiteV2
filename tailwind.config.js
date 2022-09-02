@@ -55,7 +55,7 @@ module.exports = {
             'pink' : '0 0 .5em #FF44CC',
           },
           gridTemplateColumns: {
-            'custom': '1fr 2fr 2fr 2fr 1fr'
+            'custom': '1fr 1fr 1fr 1fr 1fr'
           }
       },
   },
