@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {MenuIcon, XIcon} from '@heroicons/react/outline'
 import Image from 'next/image';
 
@@ -7,7 +7,7 @@ const Navbar = () => {
 
     const [nav,setNav] = useState(false)
     const handleClick = () => setNav(!nav)
-    
+
     return(
         <div className="w-screen h-[80px] z-10 bg-gray-900 fixed drop-shadow-lg font-body text-primary">
             <div className="flex items-center justify-between w-full h-full px-2 ">
