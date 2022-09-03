@@ -19,11 +19,11 @@ const Navbar = () => {
                         <ul className="float-right text-xl font-extrabold md:flex">
                             <li className="border-sky-200 border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
                             hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">About</li>
-                            <li className="border-primary border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
+                            <li className="border-sky-200 border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
                             hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Projects</li>
                             <li className="border-sky-200 border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
                             hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Work</li>
-                            <li className="border-primary border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
+                            <li className="border-sky-200 border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
                             hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Contact</li>
                             <div className="resumeButton">
                                 <li className="float-right p-4 px-8 py-4 m-3 text-3xl transition-opacity border-4 md:flex text-vice border-vice shadow-pinkGlow text-shadow-pink rounded-xl hover:bg-vice hover:text-gray-900 hover:shadow-brightPinkGlow">Resume</li>
