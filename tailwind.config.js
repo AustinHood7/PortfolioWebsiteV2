@@ -1,5 +1,17 @@
 const { readBuilderProgram } = require('typescript');
 
+function dynamicHsl(h, s, l) {
+  return ({ opacityVariable, opacityValue }) => {
+      if (opacityValue !== undefined) {
+          return `hsla(${h}, ${s}, ${l}, ${opacityValue})`
+      }
+      if (opacityVariable !== undefined) {
+          return `hsla(${h}, ${s}, ${l}, var(${opacityVariable}, 1))`
+      }
+      return `hsl(${h}, ${s}, ${l})`
+  }
+}
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -43,7 +55,8 @@ module.exports = {
           colors: {
             primary: '#04d9ff',
             miami: '#0BD3D3',
-            vice: '#FF44CC'
+            vice: '#FF44CC',
+            normal: 'hsl(23,13%,33%)',
           },
           boxShadow: {
             'blueGlow' : '0 0 .5em 0 #04d9ff',

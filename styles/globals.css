@@ -10,8 +10,7 @@
     }
 
     :root {
-        --color-primary: 317 100% 54%
-        --color-secondary: 323 21% 16%
+
     }
 
     .nav ul li{
@@ -34,8 +33,5 @@
 
     .a {
         padding-bottom: 10rem;
-    }
-
-    .verticalLine{
     }
 }

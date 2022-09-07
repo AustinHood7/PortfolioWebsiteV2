@@ -6,31 +6,33 @@ import Image from 'next/image';
 const Navbar2 = () => {
 
     return(
-        <header className="flex justify-between text-center">
+        <header className="flex justify-between text-2xl text-center bg-gray-900 text-sky-200 font-body">
             <div className="m-8">
                 <img src="index"></img>
             </div>
             <nav>
-                <ul className="flex p-0 m-0 mt-3 list-none 
-                maxW:fixed left-[30%] maxW:bg-primary maxW:flex-col maxW:h-full maxW:w-full">
-                    <li className="maxW:text-left maxW:ml-6">
+                <ul className="flex p-0 m-0 mt-3 list-none font-bold
+                maxW:fixed left-[30%] 
+                bg-primary backdrop-blur-[1rem] bg-opacity-10 maxW:flex-col maxW:h-full maxW:w-full maxW:pt-[10rem] maxW:pl-[2rem]
+                lg:pr-10">
+                    <li className="maxW:text-left maxW:ml-6 maxW:my-6">
                         <a href="index.html">
-                            <span aria-hidden="true" className="font-bold">00</span> Home
+                            <span aria-hidden="true" className="font-extrabold text-primary">00. </span> About
                         </a>
                     </li>
-                    <li className="maxW:text-left maxW:ml-6">
+                    <li className="maxW:text-left maxW:ml-6 maxW:my-6">
                         <a href="destination.html">
-                            <span aria-hidden="true" className="font-bold">01</span> Destination
+                            <span aria-hidden="true" className="font-extrabold text-primary">01. </span> Projects
                         </a>            
                     </li>
-                    <li className="maxW:text-left maxW:ml-6">
+                    <li className="maxW:text-left maxW:ml-6 maxW:my-6">
                         <a href="crew.html">
-                            <span aria-hidden="true" className="font-bold">02</span> Crew
+                            <span aria-hidden="true" className="font-extrabold text-primary">02. </span> Work
                         </a>            
                     </li>
-                    <li className="maxW:text-left maxW:ml-6">
+                    <li className="maxW:text-left maxW:ml-6 maxW:my-6">
                         <a href="technology.html">
-                            <span aria-hidden="true" className="font-bold">03</span> Technology
+                            <span aria-hidden="true" className="font-extrabold text-primary">03. </span> Contact
                         </a>            
                     </li>
                 </ul>
