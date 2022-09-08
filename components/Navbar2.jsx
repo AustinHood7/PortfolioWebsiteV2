@@ -7,9 +7,12 @@ const Navbar2 = () => {
 
     return(
         <header className="flex justify-between text-2xl text-center bg-gray-900 text-sky-200 font-body">
-            <div className="m-8">
-                <img src="index"></img>
+            <div className="mx-12 my-[15px]">
+                <img src="hoodLogo65.png"></img>
             </div>
+
+            <button class="menuToggle" className="absolute w-[1rem] aspect-square top-[2rem] right-[2rem] z-[9999]"></button>
+
             <nav>
                 <ul className="flex p-0 m-0 mt-3 list-none font-bold
                 maxW:fixed left-[30%] 

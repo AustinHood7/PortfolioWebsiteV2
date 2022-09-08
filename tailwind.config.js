@@ -1,3 +1,4 @@
+const { url } = require('inspector');
 const { readBuilderProgram } = require('typescript');
 
 function dynamicHsl(h, s, l) {
@@ -72,6 +73,8 @@ module.exports = {
           },
           gridTemplateColumns: {
             'custom': '1fr 1fr 1fr 1fr 1fr'
+          },
+          backgroundImage: {
           }
       },
   },

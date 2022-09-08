@@ -1,7 +1,3 @@
-import Link from "next/link";
-import React, {useState} from "react";
-import {MenuIcon, XIcon} from '@heroicons/react/outline'
-import Image from 'next/image';
 
 const LandingPage = () => {
     return (
