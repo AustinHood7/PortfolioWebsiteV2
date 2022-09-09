@@ -12,11 +12,11 @@ const Navbar2 = () => {
                     <img src="hoodLogo65.png"></img>
                 </div>
 
-                <img src="icons8-menu-50.png" className="absolute w-4 h-4 aspect-square top-[2rem] right-[2rem] z-[9999] hidden maxW:block"></img>
+                <img src="hamburgerMenu.png" className="absolute w-10 aspect-square top-[2rem] right-[2rem] z-[9999] hidden maxW:block"></img>
 
                 <nav className="">
-                    <ul className="flex border-2 border-sky-200 rounded-l-full p-0 m-0 mt-3 list-none font-bold
-                    maxW:fixed left-[30%] 
+                    <ul className="flex border-2 border-sky-200 md:rounded-l-full p-0 m-0 mt-3 list-none font-bold
+                    maxW:fixed left-[30%] maxW:rounded-l-xl
                     bg-primary backdrop-blur-[1rem] bg-opacity-10 maxW:flex-col maxW:h-full maxW:w-full maxW:pt-[10rem] maxW:pl-[2rem]
                     lg:pr-10">
                         <li className="maxW:text-left maxW:ml-6 maxW:my-6 border-sky-200">
