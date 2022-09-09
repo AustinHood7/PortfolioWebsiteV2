@@ -12,7 +12,7 @@ const LandingPage = () => {
                     <span className="text-primary text-shadow-blue"> SoleIndustries.com</span>
                 </p>
             </div>
-            <span className="col-span-2 mt-[17rem]"><img src="whale.png"></img></span>
+            <span className="col-span-2 mt-[17rem] z-0 translate-x-[-8%]"><img src="whale.png" className="z-0"></img></span>
         </div>
     )
 }

@@ -9,32 +9,11 @@
         @apply p-[1rem]
     }
 
-    :root {
-
-    }
-
-    .nav ul li{
-        text-shadow: 0 0 1em hsl(0 0% 100% / 0.5);
-        box-shadow: 0 0 1em 0 #04d9ff,
-
-        inset 0 0 1em 0 #04d9ff
-    }
-    .nav ul .resumeButton li{
-        text-shadow: 0 0 1em hsl(0 0% 100% / 0.5);
-        box-shadow: 0 0 1em 0 #FF44CC,
-        inset 0 0 .5em 0 #FF44CC
-    }
-
-    .hamburgerMenu{
-        text-shadow: 0 0 1em hsl(0 0% 100% / 0.5);
-        box-shadow: 0 0 1em 0 #FF44CC,
-        inset 0 0 .5em 0 #FF44CC
-    }
-
     .a {
         padding-bottom: 10rem;
     }
 
-    .menuToggle {
+    .primary-navigation[data-visible="true"] {
+        transform:translateX(0%);
     }
 }
