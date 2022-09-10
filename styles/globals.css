@@ -12,8 +12,4 @@
     .a {
         padding-bottom: 10rem;
     }
-
-    .primary-navigation[data-visible="true"] {
-        transform:translateX(0%);
-    }
 }
