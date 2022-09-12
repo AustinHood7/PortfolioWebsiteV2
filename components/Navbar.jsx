@@ -9,24 +9,21 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav)
 
     return(
-        <div className="w-screen h-[80px] z-10 bg-gray-900 fixed drop-shadow-lg font-body text-primary">
-            <div className="flex items-center justify-between w-full h-full px-2 ">
-                <div className="flex items-center">
-                    <h1 className="border-primary border-4 py-3 p-x-[1em] m-3 rounded-xl px-5 text-3xl font-extrabold sm:text-4xl hover:shadow-brightGlow">Austin Hood</h1>
+        <div className="w-screen h-[80px] z-10 bg-gray-900 fixed 
+        font-body text-primary bg-opacity-5">
+            <div className="flex items-center justify-between w-full h-full px-2 text-2xl">
+                <div className="flex items-center ml-14">
+                    <img src="hoodLogo65.png"></img>
                 </div>
-                <div className="hidden md:flex font-rob">
+                <div className="hidden md:flex font-body">
                     <div className="nav">
-                        <ul className="float-right text-xl font-extrabold md:flex">
-                            <li className="border-sky-200 border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
-                            hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">About</li>
-                            <li className="border-sky-200 border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
-                            hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Projects</li>
-                            <li className="border-sky-200 border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
-                            hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Work</li>
-                            <li className="border-sky-200 border-2 py-5 p-x-[1em] m-3 rounded-xl text-shadow-blue
-                            hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">Contact</li>
+                        <ul className="float-right font-extrabold md:flex border-0 bg-primary rounded-l-full backdrop-blur-[1rem] bg-opacity-10 items-center">
+                            <li className="mx-1 my-2 border-0 rounded-full hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">00. <span className="text-sky-200">About</span></li>
+                            <li className="mx-1 my-2 border-0 rounded-full hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">01. <span className="text-sky-200">Projects</span></li>
+                            <li className="mx-1 my-2 border-0 rounded-full hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">02. <span className="text-sky-200">Work</span></li>
+                            <li className="mx-1 my-2 border-0 rounded-full hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">03. <span className="text-sky-200">Contact</span></li>
                             <div className="resumeButton">
-                                <li className="float-right p-4 px-8 py-4 m-3 text-3xl transition-opacity border-4 md:flex text-vice border-vice shadow-pinkGlow text-shadow-pink rounded-xl hover:bg-vice hover:text-gray-900 hover:shadow-brightPinkGlow">Resume</li>
+                                <li className="float-right px-8 mr-4 text-4xl transition-opacity border-0 rounded-full bg-vice bg-opacity-30 md:flex text-vice hover:bg-vice hover:text-gray-900 hover:shadow-brightPinkGlow">Resume</li>
                             </div>
                         </ul>
                     </div>

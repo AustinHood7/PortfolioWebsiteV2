@@ -22,9 +22,7 @@ const Navbar2 = () => {
                 </div>
 
                 <nav>
-                    <ul className="flex border-2 border-sky-200 md:rounded-l-full z-[9998] mt-3 list-none font-bold
-                    maxW:fixed left-[30%] maxW:rounded-l-xl
-                    bg-primary backdrop-blur-[1rem] bg-opacity-10 maxW:flex-col maxW:h-full maxW:w-full maxW:pt-[10rem] maxW:pl-[2rem]">
+                    <ul className="flex border-2 border-sky-200 md:rounded-l-full z-[9998] mt-3 list-none font-boldmaxW:fixed left-[30%] maxW:rounded-l-xl bg-primary backdrop-blur-[1rem] bg-opacity-10 maxW:flex-col maxW:h-full maxW:w-full maxW:pt-[10rem] maxW:pl-[2rem]">
                         <li className="maxW:text-left maxW:ml-6 maxW:my-6 border-sky-200">
                             <a href="index.html">
                                 <span className="font-extrabold text-primary">00. </span> About
