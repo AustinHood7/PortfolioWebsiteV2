@@ -27,14 +27,14 @@ const Navbar = () => {
                             <li className="mx-1 my-2 transition-all duration-200 border-0 rounded-full hover:text-shadow-blue">03. 
                             <span className="text-sky-200"> Contact</span></li>
                             <div className="resumeButton">
-                                <li className="float-right px-4 mx-4 mr-8 text-xl transition-all border-2 rounded-xl border-vice md:flex text-vice hover:text-shadow-brightPink">Resume</li>
+                                <li className="float-right px-4 mx-4 mr-8 text-xl transition-all border-2 rounded-xl border-primary md:flex text-primary hover:text-shadow-blue">Resume</li>
                             </div>
                         </ul>
                     </div>
                 </div>
-                <div className='mr-6 border-2 border-vice md:hidden hover:bg-vice hover:text-gray-900 hover:shadow-brightPinkGlow rounded-xl' onClick={handleClick}>
+                <div className='mr-6 border-2 border-primary md:hidden hover:bg-primary hover:text-gray-900 hover:shadow-brightPinkGlow rounded-xl' onClick={handleClick}>
                     <div className='hamburgerMenu'>
-                        {!nav ? <MenuIcon className='w-10 text-vice hover:text-gray-900'/> : <XIcon className="w-10 text-vice hover:text-gray-900"/>}
+                        {!nav ? <MenuIcon className='w-10 text-primary hover:text-gray-900'/> : <XIcon className="w-10 text-vice hover:text-gray-900"/>}
                     </div>
                 </div>
             </div>
