@@ -10,24 +10,24 @@ const Navbar = () => {
 
     return(
         <div className="w-screen h-[80px] z-10 bg-gray-900 fixed 
-        font-body text-primary bg-opacity-5">
-            <div className="flex items-center justify-between w-full h-full px-2 text-2xl">
+        font-body text-primary bg-opacity-0">
+            <div className="flex items-center justify-between w-full h-full px-2 text-lg">
                 <div className="flex items-center ml-[2.5rem]">
                     <img src="hoodLogo65.png"></img>
                 </div>
-                <div className="hidden md:flex font-body">
+                <div className="hidden md:flex">
                     <div className="nav">
-                        <ul className="float-right font-extrabold md:flex border-0 bg-primary rounded-l-full backdrop-blur-[1rem] bg-opacity-10 items-center">
-                            <li className="mx-1 my-2 border-0 rounded-full hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">00. 
+                        <ul className="float-right md:flex border-0 bg-primary rounded-l-full backdrop-blur-[1rem] bg-opacity-0 items-center">
+                            <li className="mx-1 my-2 transition-all duration-200 border-0 rounded-full hover:text-shadow-blue">00. 
                             <span className="text-sky-200"> About</span></li>
-                            <li className="mx-1 my-2 border-0 rounded-full hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">01. 
+                            <li className="mx-1 my-2 transition-all duration-200 border-0 rounded-full hover:text-shadow-blue">01. 
                             <span className="text-sky-200"> Projects</span></li>
-                            <li className="mx-1 my-2 border-0 rounded-full hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">02. 
+                            <li className="mx-1 my-2 transition-all duration-200 border-0 rounded-full hover:text-shadow-blue">02. 
                             <span className="text-sky-200"> Work</span></li>
-                            <li className="mx-1 my-2 border-0 rounded-full hover:bg-primary hover:text-gray-900 hover:shadow-brightGlow">03. 
+                            <li className="mx-1 my-2 transition-all duration-200 border-0 rounded-full hover:text-shadow-blue">03. 
                             <span className="text-sky-200"> Contact</span></li>
                             <div className="resumeButton">
-                                <li className="float-right px-8 mr-4 text-4xl transition-opacity border-0 rounded-full bg-vice bg-opacity-30 md:flex text-vice hover:bg-vice hover:text-gray-900 hover:shadow-brightPinkGlow">Resume</li>
+                                <li className="float-right px-4 mx-4 mr-8 text-xl transition-all border-2 rounded-xl border-vice md:flex text-vice hover:text-shadow-brightPink">Resume</li>
                             </div>
                         </ul>
                     </div>

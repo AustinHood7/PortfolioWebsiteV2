@@ -49,9 +49,10 @@ module.exports = {
             neon_glow: 'wiggle 1s ease-in out infinate'
           },
           fontFamily: {
-            alt: ['Poppins'],
-            body: ['Pacifico, cursive'],
-            rob: ['Roboto']
+            body: ['Poppins'],
+            body2: ['Pacifico, cursive'],
+            body0: ['Red Hat Display'],
+            body1: ['Roboto']
           },
           colors: {
             primary: '#04d9ff',
@@ -70,6 +71,7 @@ module.exports = {
             'blue' : '0 0 1em #04d9ff',
             'brightBlue': '0 0 1em #04d9ff',
             'pink' : '0 0 .5em #FF44CC',
+            'brightPink' : '0 0 1em #FF44CC'
           },
           gridTemplateColumns: {
             'custom': '1fr 1fr 1fr 1fr 1fr 1fr'
