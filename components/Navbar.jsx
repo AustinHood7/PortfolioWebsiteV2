@@ -1,7 +1,8 @@
-import Link from "next/link";
 import React, {useEffect, useState} from "react";
 import {MenuIcon, XIcon} from '@heroicons/react/outline'
 import Image from 'next/image';
+import personalLogo from '../public/hoodLogo65.png'
+
 
 const Navbar = () => {
 
@@ -13,7 +14,12 @@ const Navbar = () => {
         font-body text-primary bg-opacity-0">
             <div className="flex items-center justify-between w-full h-full px-2 text-lg">
                 <div className="flex items-center ml-[2.5rem]">
-                    <img src="hoodLogo65.png"></img>
+                    <Image
+                        src={personalLogo}
+                        alt="Hood"
+                        width="49px"
+                        height="65px"
+                    />
                 </div>
                 <div className="hidden md:flex">
                     <div className="nav">

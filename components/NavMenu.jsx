@@ -1,24 +1,40 @@
-import Link from "next/link";
 import React, {useState} from "react";
-import {MenuIcon, XIcon} from '@heroicons/react/outline'
 import Image from 'next/image';
+import resume from '../public/resume-35.png'
+import github from '../public/github-35.png'
+import linkedin from '../public/linkedin-35.png'
 
 const NavMenu = () => {
     return (
         <div className="fixed top-[75%] left-[3%] text-primary">
             <a href="https://github.com/AustinHood7">
                 <div className="pb-3">
-                    <img src="resume-35.png" alt="This is resume"></img>
+                    <Image
+                        src={resume}
+                        alt="resume"
+                        width="35px"
+                        height="35px"
+                    />
                 </div>
             </a>
             <a href="https://github.com/AustinHood7">
                 <div className="pb-3">
-                    <img src="github-35.png" alt="This is github"></img>
+                    <Image
+                        src={github}
+                        alt="github"
+                        width="35px"
+                        height="35px"
+                    />
                 </div>
             </a>
             <a href="https://www.linkedin.com/in/austin-hood7/">
                 <div className="pb-2">
-                    <img src="linkedin-35.png" alt="This is github"></img>
+                    <Image
+                        src={linkedin}
+                        alt="linkedin"
+                        width="35px"
+                        height="35px"
+                    />
                 </div>
             </a>
             <div className="h-[150px] border-l-[.15rem] border-zinc-200 ml-[14.3px]"></div>
