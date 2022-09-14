@@ -5,7 +5,7 @@ const LandingPage = () => {
     return (
         <div className="grid w-full h-screen bg-gray-900 grid-cols-custom">
             <div className="max-w-full col-span-3 col-start-2 pl-[2rem] m-auto mt-[12rem] sm:grid-cols-2">
-                <p className="py-2 my-2 mt-8 text-lg font-body text-primary">Hi, my name is </p>
+                <p className="py-2 my-2 mt-8 text-lg text-sky-200 font-body">Hi, my name is </p>
                 <h1 className="py-2 font-bold text-8xl font-body text-primary md:flex text-shadow-white">Austin Hood</h1>
                 <p className="py-5 my-2 text-6xl font-bold text-gray-400 font-body">I make software for the web. </p>
                 <p className="pr-[26rem] py-5 font-rob text-gray-400">
