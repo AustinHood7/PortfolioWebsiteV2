@@ -52,7 +52,7 @@ module.exports = {
             body: ['Poppins'],
             body2: ['Pacifico, cursive'],
             body0: ['Red Hat Display'],
-            body1: ['Roboto']
+            rob: ['Roboto']
           },
           colors: {
             primary: '#04d9ff',
@@ -74,7 +74,8 @@ module.exports = {
             'brightPink' : '0 0 1em #FF44CC'
           },
           gridTemplateColumns: {
-            'custom': '1fr 1fr 1fr 1fr 1fr 1fr'
+            'custom': '1fr 1fr 1fr 1fr 1fr 1fr',
+            'rows': '1fr 2fr 2fr'
           },
           backgroundImage: {
           }
