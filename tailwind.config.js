@@ -23,7 +23,7 @@ module.exports = {
       screens: {
         'maxW': {'max': '35em'},
         // => @media (max-width: 1535px) { ... }
-
+        'maxSm': {'max': '639px'},
         sm: '640px',
         // => @media (min-width: 640 px) { ... }
     
