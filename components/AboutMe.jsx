@@ -32,7 +32,7 @@ const AboutMe = () => {
                         <ul className="font-bold list-disc text-sky-100 text-shadow-white font-rob">
                             <li>JavaScript</li>
                             <li>C++</li>
-                            <li>Python</li>
+                            <li>Python.</li>
                         </ul>
                     </div>
 
