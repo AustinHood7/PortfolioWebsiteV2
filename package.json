@@ -12,10 +12,11 @@
     "@heroicons/react": "^1.0.6",
     "firebase": "^9.9.2",
     "heroicons-react": "^1.4.1",
-    "next": "12.2.4",
+    "next": "^12.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-firebase-hooks": "^5.0.3"
+    "react-firebase-hooks": "^5.0.3",
+    "react-tsparticles": "^2.7.1"
   },
   "devDependencies": {
     "@types/node": "^18.7.2",
