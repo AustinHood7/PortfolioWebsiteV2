@@ -3,8 +3,8 @@ import whale from '../public/whale.png'
 
 const LandingPage = () => {
     return (
-        <div className="flex items-center justify-center w-full h-screen bg-gray-900 ">
-            <div className="maxSm:mt-10 md:max-w-[50vw] pl-[2rem] m-auto flex-col flex justify-center md:mt-[20vh] md:ml-[15vw] maxSm:max-w-[80vw] backdrop-blur-[1rem] bg-opacity-0 font-body md:translate-x-[5vw] maxSm:p-5">
+        <div className="flex items-center justify-center w-full min-h-[100%] bg-gray-900 ">
+            <div className="maxSm:mt-10 md:max-w-[50vw] pl-[2rem] flex-col flex justify-center md:ml-[15vw] maxSm:max-w-[80vw] backdrop-blur-[1rem] bg-opacity-0 font-body md:translate-x-[5vw] maxSm:p-5">
                 <p className="py-2 my-2 mt-8 text-lg text-sky-200">Hi, my name is </p>
                 <h1 className="py-2 font-bold text-8xl font-body text-primary text-shadow-white">Austin Hood</h1>
                 <p className="py-3 my-2 text-6xl font-bold text-gray-400">I make software for the web. </p>

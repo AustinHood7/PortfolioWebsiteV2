@@ -4,6 +4,7 @@ import LandingPage from '../components/LandingPage'
 import NavMenu from '../components/NavMenu'
 import VerticalEmail from '../components/VerticalEmail'
 import AboutMe from '../components/AboutMe'
+import Projects from '../components/Projects'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -13,6 +14,7 @@ function MyApp({ Component, pageProps }) {
       <NavMenu />
       <VerticalEmail />
       <AboutMe />
+      <Projects />
     </>
   )
   
