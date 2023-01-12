@@ -4,7 +4,7 @@ import envelope from '../public/envelope-50.png'
 
 const VerticalEmail = () => {
     return (
-        <div className="fixed top-[83%] right-[3%] text-primary ">
+        <div className="fixed top-[83%] right-[3%] text-primary z-10">
                 <a className="mailto" href="mailto:austinmhood@live.com">                    
                     <Image
                         src={envelope}
