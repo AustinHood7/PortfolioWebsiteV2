@@ -23,7 +23,7 @@ const Projects = () => {
                         streamlined development using git.
                     </div>
                     <div className='mt-10 overflow-hidden border-2 rounded-xl border-primary'>
-                        <a href='https://centz.herokuapp.com/' target="_blank">
+                        <a href='https://centz.herokuapp.com/' target="_blank" rel="noopener noreferrer">
                             <Image 
                                 src={centz1}
                                 alt="centz"
@@ -61,7 +61,7 @@ const Projects = () => {
                         performance of websites that I am working on. 
                     </div>
                     <div className='overflow-hidden border-2 rounded-xl border-primary h-[225px] mt-10'>
-                        <a href='https://austinmhood.vercel.app/' target="_blank">
+                        <a href='https://austinmhood.vercel.app/' target="_blank" rel="noopener noreferrer">
                             <Image 
                                 src={web}
                                 alt="centz1"
