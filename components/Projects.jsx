@@ -6,7 +6,7 @@ import web from '../public/web.png'
 
 const Projects = () => {
     return (
-        <div className="flex flex-col items-center justify-center bg-gray-900 text-sky-200">
+        <div className="flex flex-col items-center justify-center bg-gray-900 text-sky-200 md:pb-[10vh]">
             <div className="flex items-center justify-center mt-[10vh] md:mr-[25vw]">
                 <div className="mr-5 text-5xl text-center transition-all duration-200 text-primary text-shadow-white">01. <span className="text-sky-200">Projects </span></div>
                 <hr className="border-primary border-[.15rem] rounded-lg shadow-blueGlow bg-sky-300 ml-2 w-[15vw] mt-2 maxSm:w-[20vw]"></hr>
@@ -15,8 +15,8 @@ const Projects = () => {
                 <div className='md:flex justify-center my-12 items-center gap-x-[5em]'>
                     <div className='text-rob text-gray-400 md:max-w-[30vw] text-lg'>
                         <h1 className='mb-5 text-2xl text-center text-sky-100 text-shadow-white'>Centz</h1>
-                        This is a project I began making for a school project. I wanted more experience
-                        using different frameworks and backends. This one specifically used react/flask. 
+                        This is a project I began making for a school group assignment. I wanted more experience
+                        using different frameworks and backends so we went with a react/flask stack. 
                         I also wanted to create a web application 
                         instead of a static website to work with more dynamic data. This was also collaborative
                         with a team of 3 so it helped become much more experienced with CI/CD pipelines and 
@@ -34,13 +34,15 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className='flex maxSm:flex-col-reverse justify-center my-12 items-center gap-x-[5em]'>
-                    <div className='overflow-hidden border-2 rounded-xl border-primary mt-10 ml-[2rem] '>
+                    <div className='mt-10 overflow-hidden border-2 rounded-xl border-primary'>
+                    <a href='https://social-market.vercel.app/' target="_blank" rel="noopener noreferrer">
                         <Image 
-                            src={sm}
-                            alt="centz"
-                            width="400px"
-                            height="225px"
-                        />
+                                src={sm}
+                                alt="centz"
+                                width="400px"
+                                height="225px"
+                            />
+                        </a>
                     </div>
                     <div className='text-rob text-gray-400 md:max-w-[30vw] text-lg'>
                         <h1 className='mb-5 text-2xl text-center text-sky-100 text-shadow-white'>The Social Market</h1>

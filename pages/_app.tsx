@@ -5,6 +5,7 @@ import NavMenu from '../components/NavMenu'
 import VerticalEmail from '../components/VerticalEmail'
 import AboutMe from '../components/AboutMe'
 import Projects from '../components/Projects'
+import Contact from '../components/Contact'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }) {
       <VerticalEmail />
       <AboutMe />
       <Projects />
+      <Contact />
     </>
   )
   

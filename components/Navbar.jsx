@@ -29,8 +29,6 @@ const Navbar = () => {
                             <li className="mx-1 my-2 transition-all duration-200 border-0 rounded-full hover:text-shadow-blue">01. 
                             <span className="text-sky-200"> Projects</span></li>
                             <li className="mx-1 my-2 transition-all duration-200 border-0 rounded-full hover:text-shadow-blue">02. 
-                            <span className="text-sky-200"> Work</span></li>
-                            <li className="mx-1 my-2 transition-all duration-200 border-0 rounded-full hover:text-shadow-blue">03. 
                             <span className="text-sky-200"> Contact</span></li>
                             <div className="resumeButton">
                                 <li className="float-right px-4 mx-4 mr-8 text-xl transition-all border-2 rounded-xl border-primary md:flex text-primary hover:text-shadow-blue">Resume</li>
