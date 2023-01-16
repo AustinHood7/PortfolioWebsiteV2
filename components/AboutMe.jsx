@@ -7,7 +7,7 @@ const AboutMe = () => {
     return (
         <div className="flex flex-col bg-gray-900 text-sky-200 md:pb-[10vh]">
             <div className="flex items-center justify-center mt-[10vh] md:mr-[25vw]">
-                <div className="mr-5 text-5xl text-center transition-all duration-200 text-primary text-shadow-white">00. <span className="text-sky-200">About </span></div>
+                <div className="mr-5 text-5xl text-center transition-all duration-200 text-primary text-shadow-white" id="about">00. <span className="text-sky-200">About </span></div>
                 <hr className="border-primary border-[.15rem] rounded-lg shadow-blueGlow bg-sky-300 ml-2 w-[15vw] mt-2 maxSm:w-[20vw]"></hr>
             </div>
             <div className="flex maxSm:flex-col mt-10 justify-evenly md:ml-[13vw] maxSm:items-center">
