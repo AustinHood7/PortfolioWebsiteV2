@@ -65,6 +65,7 @@ module.exports = {
             'brightGlow' : '0 0 1em .5em #04d9ff',
             'pinkGlow' : '0 0 1em 0 #FF44CC',
             'brightPinkGlow' : '0 0 1em .5em #FF44CC',
+            'whiteGlow': '0 0 1em 0.5em rgba(186, 230, 253, 0.5)',
           },
           textShadow: {
             'white' : '0 0 1em hsl(0 0% 100% / 0.5)',
@@ -78,7 +79,11 @@ module.exports = {
             'rows': '1fr 2fr 2fr'
           },
           backgroundImage: {
-          }
+          },
+          translate: {
+            '-full': '-100%',
+            'full': '100%',
+          },
       },
   },
   plugins: [require('tailwindcss-textshadow')],
