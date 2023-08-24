@@ -7,7 +7,7 @@ import linkedin from '../public/linkedin-35.png'
 const NavMenu = () => {
     return (
         <div className="fixed top-[75%] left-[3%] text-primary z-10">
-            <a href={'https://software-resume.tiiny.site/'}  target="_blank" rel="noreferrer">
+            <a href={'https://software-resume-1.s3.amazonaws.com/Software_Engineering_Resume-4.pdf'}  target="_blank" rel="noreferrer">
                 <div className="pb-3">
                     <Image
                         src={resume}
