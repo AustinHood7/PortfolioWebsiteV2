@@ -35,7 +35,7 @@ const Projects = () => {
                                                                 <div className='flex maxSm:flex-col-reverse justify-center my-12 items-center gap-x-[5em]'>
                                     <div className='text-rob text-gray-400 md:max-w-[30vw] text-lg'>
                                         <h1 className='mb-5 text-2xl text-center text-sky-100 text-shadow-white'>The Social Market</h1>
-                                        This is a showcase website designed to captivate stakeholders and spark intrigue for a novel social networking site, "The Social Market". 
+                                        This is a showcase website designed to captivate stakeholders and spark intrigue for a novel social networking site, &quot;The Social Market&quot;. 
                                         Constructed with Next.js, TailwindCSS, and an animation library, all hosted on Vercel. 
                                         This project was crafted as a professional freelancing endeavor to meet the precise needs of my client.
                                     </div>
@@ -65,7 +65,7 @@ const Projects = () => {
                                         <h1 className='mb-5 text-2xl text-center text-sky-100 text-shadow-white'>Mental Health & You</h1>
                                         This platform is built leveraging advanced technologies: Next.js, TailwindCSS, and specialized animation libraries. 
                                         Rather than just designing, my primary responsibility was implementing the user interface according to a provided UI mockup. 
-                                        For a dependable and efficient user experience, we've hosted the platform on AWS Amplify. During my internship, I played a pivotal 
+                                        For a dependable and efficient user experience, we&apos;ve hosted the platform on AWS Amplify. During my internship, I played a pivotal 
                                         role in developing the Patient-Counselor Connection Platform, a web-based solution designed to seamlessly link patients with counselors. 
                                     </div>
                                     
@@ -135,7 +135,7 @@ const Projects = () => {
                                         This is an application designed to demystify the current moon cycle and elucidate its significance. 
                                         While the core objective was to enrich my expertise in tRPC and backend API consumption, the project blossomed into a comprehensive tool. 
                                         Leveraging the T3 stack - consisting of Next.js, TailwindCSS, and tRPC - this application dynamically fetches and displays 
-                                        moon data, adjusting its imagery in real-time based on the moon's current phase.
+                                        moon data, adjusting its imagery in real-time based on the moon&apos;s current phase.
                                     </div>
                                 </div>
                                 <div className='flex maxSm:flex-col justify-center my-12 items-center gap-x-[5em]'>
