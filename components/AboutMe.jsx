@@ -12,18 +12,17 @@ const AboutMe = () => {
             </div>
             <div className="flex maxSm:flex-col mt-10 justify-evenly md:ml-[13vw] maxSm:items-center">
                 <div className="md:max-w-[30vw] maxSm:px-[15vw]">
-                    <div className="text-lg text-gray-400 font-rob">Hello! My name is Austin and I like to create things I can share with everybody on the internet. 
-                    I started in web development my sophmore year of school at Florida Gulf Coast University. I began with simple but custom CSS designs that 
-                    I could use for my small web projects, it turns out it is something that has stuck with me and I have grown passionate about as I made have made my way through school. </div>
+                    <div className="text-lg text-gray-400 font-rob">Hello! My name is Austin and I love to create things I can share with everybody on the web. 
+                    I started in web development my sophmore year of school at Florida Gulf Coast University. It started with just simple CSS designs and eventually has blossomed
+                    into comprehensive full-stack applications that can benefit individuals from around the world. </div>
 
-                    <div className="mt-10 text-lg text-gray-400 font-rob">As of today, I am looking for new opportunities to learn more about front-end, some recent examples are 
-                    building new web applications or professional static websites.
-                    Right now, when I am not studying I am working on various personal projects like a <a href="https://centz.herokuapp.com/" className="text-primary">crypto analytics web app</a>,
-                    <a href="" className="text-primary"> The Social Market</a>, or this very website! My main focus right now is to find new and exciting opportunites that will help me become the best engineer 
-                    I can be.</div>
+                    <div className="mt-10 text-lg text-gray-400 font-rob">Right now, I am looking for new and exciting opportunities to grow as an engineer, recently this has been building both professional and personal software.
+                    When I am not studying new frameworks and design principals, I am working at my internship <a href="https://mental-health-and-you-five.vercel.app/" className="text-primary">Mental Health & You</a>,
+                    on a freelancing project,<a href="" className="text-primary"> The Social Market</a>, or any of my personal projects. I strive to create software that can make an impact, from things as small as designing characters for a Dungeons and Dragons campaign, 
+                    to connecting patients to couselors with an online web applcation.</div>
 
                     <div className="mt-10 text-lg text-gray-400 font-rob">Here are some of the technologies I have been working with:</div>
-                    <div className="flex justify-between mr-[45%] ml-[10%]">
+                    <div className="flex justify-between mr-[25%] ml-[10%]">
                         <ul className="font-bold list-disc text-sky-100 text-shadow-white font-rob">
                             <li>Next.JS</li>
                             <li>React</li>
@@ -31,18 +30,23 @@ const AboutMe = () => {
                         </ul>
                         <ul className="font-bold list-disc text-sky-100 text-shadow-white font-rob">
                             <li>JavaScript</li>
-                            <li>C++</li>
+                            <li>TypeScript</li>
                             <li>Python</li>
+                        </ul>
+                        <ul className="font-bold list-disc text-sky-100 text-shadow-white font-rob">
+                            <li>AWS</li>
+                            <li>Vercel</li>
+                            <li>tRPC</li>
                         </ul>
                     </div>
 
                 </div>
-                <div className="overflow-hidden border-2 rounded-xl border-primary h-[300px] w-[300px] md:mr-[10vw] mt-10 md:translate-x-[-5vw]">
+                <div className="overflow-hidden border- rounded-xl border-primary h-[400px] w-[400px] md:mr-[10vw] mt-2 md:translate-x-[-3vw]">
                     <Image
                         src={me}
                         alt="Hood"
-                        width="300px"
-                        height="300px"
+                        width="400px"
+                        height="400px"
                     />
                 </div>
             </div>

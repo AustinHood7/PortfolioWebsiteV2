@@ -14,9 +14,9 @@ const Contact = () => {
                     <hr className="border-primary border-[.15rem] rounded-lg shadow-blueGlow bg-sky-300 ml-2 w-[15vw] mt-2 maxSm:w-[20vw]"></hr>
                 </div>
                 <div className="md:max-w-[30vw] md:mr-[25vw] text-lg text-gray-400">
-                    I am currently looking for new and exciting opportunities as I am graduating this coming spring so my inbox is always open. If you have 
-                    any questions or want to see any of my other projects use the links below to reach me. I would love to hear from you and I will do my best 
-                    to get back to you.
+                    I am always open to new inquiries and check my inbox daily. If you have 
+                    any questions or would like to see any of my other projects, please use the links below. I would love to hear from you and I will do my best 
+                    to get back to you in a timely manner.
                     <div className="flex justify-evenly mb-[10vh]">
                         <a href="https://github.com/AustinHood7">
                             <div className="flex items-center pb-3 mt-5">
