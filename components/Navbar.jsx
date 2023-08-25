@@ -66,7 +66,7 @@ const Navbar = () => {
                             <li className="mx-1 my-2 transition-all duration-200 border-0 rounded-full hover:text-shadow-blue">03. 
                             <span className="text-sky-200" onClick={scrollToContact}> Contact</span></li>
                             <div className="resumeButton">
-                                <li className="float-right px-4 mx-4 mr-8 text-xl transition-all border-2 rounded-xl border-primary md:flex text-primary hover:text-shadow-blue"><a href={'https://software-resume.tiiny.site/'}  target="_blank" rel="noreferrer">Resume</a></li>
+                                <li className="float-right px-4 mx-4 mr-8 text-xl transition-all border-2 rounded-xl border-primary md:flex text-primary hover:text-shadow-blue"><a href={'https://software-resume-1.s3.amazonaws.com/Software_Engineering_Resume-4.pdf'}  target="_blank" rel="noreferrer">Resume</a></li>
                             </div>
                         </ul>
                     </div>

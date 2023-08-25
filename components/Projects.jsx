@@ -9,11 +9,20 @@ import { useState } from 'react';
 const Projects = () => {
 
     const [currentDiv, setCurrentDiv] = useState(1);
+    const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
 
     const fadeIn = {
       hidden: { opacity: 0 },
       visible: { opacity: 1 }
     };
+
+    function scrollToProjects() {
+        if (!isBrowser()) return;
+        var e = document.getElementById("projects");
+        e.scrollIntoView({
+            behavior: "smooth"
+          }); // Makes the element 
+    }
 
     return (
         <div className="flex flex-col items-center justify-center bg-gray-900 text-sky-200 md:pb-[10vh]">
@@ -23,7 +32,7 @@ const Projects = () => {
             </div>
             <div className='flex'>
 
-                <div className='max-w-[75vw]'>
+                <div className='max-w-[75vw] h-[1056px]'>
                     <AnimatePresence>
                         {currentDiv === 1 && (  
                             <motion.div className=''
@@ -162,7 +171,7 @@ const Projects = () => {
                         )}
                     </AnimatePresence>
                 </div>
-                <div className="flex justify-center mt-[46%] cursor-pointer translate-x-[4rem] " onClick={() => setCurrentDiv(prev => (prev === 1 ? 2 : 1))}>
+                <div className="flex justify-center mt-[46%] cursor-pointer translate-x-[4rem] " onClick={() => {setCurrentDiv(prev => (prev === 1 ? 2 : 1));scrollToProjects();}}>
                     <FaArrowRight color='#04d9ff' size={45}/>
                 </div>
             </div>

@@ -12,3 +12,12 @@
         padding-bottom: 10rem;
     }
 }
+
+:root {
+    --default-bg-color: #111827; /* your desired color */
+    /* add other variables if needed */
+}
+
+body {
+    background-color: var(--default-bg-color);
+}
