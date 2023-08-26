@@ -1,9 +1,12 @@
 import Image from 'next/image';
 import whale from '../public/whale.png'
+import { motion } from 'framer-motion';
 
 const LandingPage = () => {
     return (
-        <div className="flex justify-center w-full min-h-[100%]" id='home'>
+        <motion.div className="flex justify-center w-full min-h-[100%]" id='home' initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2 }}>
             <div className="maxSm:mt-10 md:max-w-[50vw] mt-[20vh] pl-[2rem] flex-col flex md:ml-[15vw] maxSm:max-w-[80vw] backdrop-blur-[1rem] bg-opacity-0 font-body md:translate-x-[5vw] maxSm:p-5">
                 <p className="py-2 my-2 mt-8 text-lg text-sky-200">Hi, my name is </p>
                 <h1 className="py-2 font-bold text-8xl font-body text-primary text-shadow-white">Austin Hood</h1>
@@ -22,7 +25,7 @@ const LandingPage = () => {
                     height="600px"
                 />
             </div>
-        </div>
+        </motion.div>
     )
 }
 
