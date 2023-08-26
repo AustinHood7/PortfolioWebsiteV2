@@ -1,16 +1,26 @@
 import React from "react";
 import Image from 'next/image';
 import me from '../public/me.png'
-
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 
 const AboutMe = () => {
+
+    const [inViewRef, inView] = useInView({
+        triggerOnce: true, // Only trigger this effect once
+        threshold: 0.1     // Percentage of element in viewport to trigger animation
+      });
+
     return (
         <div className="flex flex-col bg-gray-900 text-sky-200 md:pb-[10vh]">
             <div className="flex items-center justify-center mt-[10vh] md:mr-[25vw]">
                 <div className="mr-5 text-5xl text-center transition-all duration-200 text-primary text-shadow-white" id="about">00. <span className="text-sky-200">About </span></div>
                 <hr className="border-primary border-[.15rem] rounded-lg shadow-blueGlow bg-sky-300 ml-2 w-[15vw] mt-2 maxSm:w-[20vw]"></hr>
             </div>
-            <div className="flex maxSm:flex-col mt-10 justify-evenly md:ml-[13vw] maxSm:items-center">
+            <motion.div className="flex maxSm:flex-col mt-10 justify-evenly md:ml-[13vw] maxSm:items-center" ref={inViewRef}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: inView ? 1 : 0 }}
+            transition={{ duration: 2 }}>
                 <div className="md:max-w-[30vw] maxSm:px-[15vw]">
                     <div className="text-lg text-gray-400 font-rob">Hello! My name is Austin and I love to create things I can share with everybody on the web. 
                     I started in web development my sophmore year of school at Florida Gulf Coast University. It started with just simple CSS designs and eventually has blossomed
@@ -49,7 +59,7 @@ const AboutMe = () => {
                         height="400px"
                     />
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }

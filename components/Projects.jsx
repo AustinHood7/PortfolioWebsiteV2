@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import centz1 from '../public/centz1.png'
 import sm from '../public/the-social-market.png'
-import web from '../public/web.png'
 import {FaArrowRight} from 'react-icons/fa' 
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 const Projects = () => {
 
@@ -24,13 +24,22 @@ const Projects = () => {
           }); // Makes the element 
     }
 
+    const [inViewRef, inView] = useInView({
+        triggerOnce: true, // Only trigger this effect once
+        threshold: 0.1     // Percentage of element in viewport to trigger animation
+      });
+
     return (
         <div className="flex flex-col items-center justify-center bg-gray-900 text-sky-200 md:pb-[10vh]">
             <div className="flex items-center justify-center mt-[10vh] md:mr-[25vw]">
                 <div className="mr-5 text-5xl text-center transition-all duration-200 text-primary text-shadow-white" id='projects'>01. <span className="text-sky-200">Projects </span></div>
                 <hr className="border-primary border-[.15rem] rounded-lg shadow-blueGlow bg-sky-300 ml-2 w-[15vw] mt-2 maxSm:w-[20vw]"></hr>
             </div>
-            <div className='flex'>
+            <motion.div className='flex'
+            ref={inViewRef}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: inView ? 1 : 0 }}
+            transition={{ duration: 2 }}>
 
                 <div className='max-w-[75vw] h-[1056px]'>
                     <AnimatePresence>
@@ -174,7 +183,7 @@ const Projects = () => {
                 <div className="flex justify-center mt-[46%] cursor-pointer translate-x-[4rem] " onClick={() => {setCurrentDiv(prev => (prev === 1 ? 2 : 1));scrollToProjects();}}>
                     <FaArrowRight color='#04d9ff' size={45}/>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }
