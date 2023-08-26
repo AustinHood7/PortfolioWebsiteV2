@@ -30,18 +30,18 @@ const Projects = () => {
       });
 
     return (
-        <div className="flex flex-col items-center justify-center bg-gray-900 text-sky-200 md:pb-[10vh]">
+        <div className="flex flex-col items-center justify-center bg-gray-900 text-sky-200 md:pb-[10vh] relative z-10 border-0 rounded-xl bg-opacity-0 backdrop-blur-[.2rem] mx-[15vw]">
             <div className="flex items-center justify-center mt-[10vh] md:mr-[25vw]">
                 <div className="mr-5 text-5xl text-center transition-all duration-200 text-primary text-shadow-white" id='projects'>01. <span className="text-sky-200">Projects </span></div>
                 <hr className="border-primary border-[.15rem] rounded-lg shadow-blueGlow bg-sky-300 ml-2 w-[15vw] mt-2 maxSm:w-[20vw]"></hr>
             </div>
-            <motion.div className='flex'
+            <motion.div className='flex '
             ref={inViewRef}
             initial={{ opacity: 0 }}
             animate={{ opacity: inView ? 1 : 0 }}
             transition={{ duration: 2 }}>
 
-                <div className='max-w-[75vw] h-[1056px]'>
+                <div className='max-w-[75vw] h-[1056px] relative z-10'>
                     <AnimatePresence>
                         {currentDiv === 1 && (  
                             <motion.div className=''
@@ -180,7 +180,7 @@ const Projects = () => {
                         )}
                     </AnimatePresence>
                 </div>
-                <div className="flex justify-center mt-[46%] cursor-pointer translate-x-[4rem] " onClick={() => {setCurrentDiv(prev => (prev === 1 ? 2 : 1));scrollToProjects();}}>
+                <div className="relative z-10 justify-center mt-[46%] cursor-pointer translate-x-[4rem] " onClick={() => {setCurrentDiv(prev => (prev === 1 ? 2 : 1));scrollToProjects();}}>
                     <FaArrowRight color='#04d9ff' size={45}/>
                 </div>
             </motion.div>

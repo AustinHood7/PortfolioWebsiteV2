@@ -43,7 +43,7 @@ const Navbar = () => {
     }
 
     return(
-        <div className="w-screen h-[80px] z-10 bg-gray-900 fixed 
+        <div className="w-screen h-[80px] z-20 bg-gray-900 fixed 
         font-body text-primary bg-opacity-0">
             <div className="flex items-center justify-between w-full h-full px-2 text-lg">
                 <div className="flex items-center ml-[2.5rem]">
