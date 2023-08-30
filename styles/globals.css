@@ -22,3 +22,9 @@ body {
     background-color: var(--default-bg-color);
 }
 
+.fullImage {
+    width: 100%;           
+    height: 100%;          
+    object-fit: cover;     
+    object-position: center; 
+}
