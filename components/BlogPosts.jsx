@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import centz1 from '../public/centz1.png'
-import sm from '../public/the-social-market.png'
 import {FaArrowRight} from 'react-icons/fa' 
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from 'react';
@@ -77,7 +75,7 @@ const BlogPosts = () => {
                                         </a>
                                     </div>
                                     <div className='text-rob text-gray-400 text-lg mt-8'>
-                                    Dive into a comprehensive guide on utilizing tRPC for full-stack type safety. I've distilled the documentation to its essence, making tRPC more approachable and user-friendly for developers.
+                                    Dive into a comprehensive guide on utilizing tRPC for full-stack type safety. I&apos;ve distilled the documentation to its essence, making tRPC more approachable and user-friendly for developers.
                                     </div>
                                 </div>
                                 <div className='max-w-[25%] flex flex-col items-center'>
@@ -109,7 +107,7 @@ const BlogPosts = () => {
                                         </a>
                                     </div>
                                     <div className='text-rob text-gray-400 text-lg mt-8'>
-                                    I've crafted a guide detailing my journey with the Dalle API, focusing on effective and secure usage. This guide is designed to assist developers in harnessing the power of AI through REST APIs while emphasizing the importance of .env files to guard their API keys.
+                                    I&apos;ve crafted a guide detailing my journey with the Dalle API, focusing on effective and secure usage. This guide is designed to assist developers in harnessing the power of AI through REST APIs while emphasizing the importance of .env files to guard their API keys.
                                     </div>
                                 </div>
                             </motion.div>
