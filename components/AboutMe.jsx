@@ -1,7 +1,7 @@
 import React from "react";
 import Image from 'next/image';
 import me from '../public/me.png'
-import { useInView } from 'react-intersection-observer';
+import  { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 
 const AboutMe = () => {
@@ -51,14 +51,28 @@ const AboutMe = () => {
                     </div>
 
                 </div>
-                <div className="overflow-hidden border- rounded-xl border-primary h-[400px] w-[400px] mt-2">
-                    <Image
-                        src={me}
-                        alt="Hood"
-                        width="400px"
-                        height="400px"
-                    />
+                <div className="flex flex-col items-start">
+                    <div className="overflow-hidden border- rounded-xl border-primary h-[400px] w-[400px] mt-2">
+                        <Image
+                            src={me}
+                            alt="Hood"
+                            width="400px"
+                            height="400px"
+                        />
+                    </div>
+                    <div className="mt-16">
+                        <a href='https://www.credly.com/badges/22ed4b72-41a3-4d1e-a051-170eaadbe408' target="_blank" rel="noopener noreferrer">
+                            <Image 
+                                src="/cloud-practitioner.png"
+                                alt="cloud practitioner"
+                                width={150}
+                                height={150}
+                            />
+                        </a>
+                    </div>
+
                 </div>
+
             </motion.div>
         </div>
     )
